@@ -1,0 +1,13 @@
+# Xcode
+.DS_Store
+build/
+DerivedData/
+xcuserdata/
+
+# Swift Package Manager
+.swiftpm/
+.build/
+
+# Xcode automatic backup files
+*.moved-aside
+*.xcuserstate
