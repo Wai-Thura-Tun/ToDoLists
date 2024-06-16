@@ -12,9 +12,12 @@ class RootNC: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        goToTabBar()
     }
     
-    func goToHome() {
-        
+    func goToTabBar() {
+        let tabBarVC = TabBarVC.init()
+        self.setViewControllers([tabBarVC], animated: true)
     }
 }
