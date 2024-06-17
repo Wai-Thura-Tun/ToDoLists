@@ -19,6 +19,7 @@ class AddToDoVM {
     
     enum FormInput {
         case TitleTextField(String)
+        case StartDateTextField(String)
     }
     private let repository: ToDoRepository = .init()
     
@@ -32,9 +33,17 @@ class AddToDoVM {
     
     private(set) var toDoDescription: String?
     
-    private(set) var startDate: Date? = Date()
+    private(set) var startDate: Date? = Date() {
+        didSet {
+            validate()
+        }
+    }
     
-    private(set) var endDate: Date? = Date()
+    private(set) var endDate: Date? = Date() {
+        didSet {
+            validate()
+        }
+    }
     
     private(set) var isAlert: Bool = true
     
@@ -92,6 +101,10 @@ class AddToDoVM {
         var errors: [FormInput] = []
         if title == nil || title == "" {
             errors.append(.TitleTextField("Title is required."))
+        }
+        
+        if let startDate = startDate, let endDate = endDate, startDate > endDate {
+            errors.append(.StartDateTextField("Start Date must not be greater than End Date"))
         }
         self.delegate.onValidate(validationErrors: errors)
     }

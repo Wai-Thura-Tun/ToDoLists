@@ -13,6 +13,7 @@ class AddToDoVC: UIViewController, StoryBoarded {
     @IBOutlet weak var lblTitleError: UILabel!
     @IBOutlet weak var tvDescription: UITextView!
     @IBOutlet weak var tfStartDate: UITextField!
+    @IBOutlet weak var lblStartDateError: UILabel!
     @IBOutlet weak var tfEndDate: UITextField!
     @IBOutlet weak var swAlert: UISwitch!
     @IBOutlet weak var tblSubToDo: UITableView!
@@ -195,15 +196,17 @@ extension AddToDoVC: SubToDoCellDelegate {
     func onValidate(validationErrors: [AddToDoVM.FormInput]) {
         if validationErrors.isEmpty {
             btnAddToDo.isEnabled = true
-            lblTitleError.isHidden = true
+            hideError()
         }
         else {
+            hideError()
             btnAddToDo.isEnabled = false
             validationErrors.forEach { input in
                 switch input {
                 case .TitleTextField(let error):
-                    lblTitleError.text = error
-                    lblTitleError.isHidden = false
+                    showError(label: lblTitleError, error: error)
+                case .StartDateTextField(let error):
+                    showError(label: lblStartDateError, error: error)
                 }
             }
         }
@@ -211,5 +214,15 @@ extension AddToDoVC: SubToDoCellDelegate {
     
     func onTapDelete(indexPath: IndexPath) {
         self.vm.removeSubToDo(index: indexPath.row)
+    }
+    
+    private func hideError() {
+        lblTitleError.isHidden = true
+        lblStartDateError.isHidden = true
+    }
+    
+    private func showError(label: UILabel, error: String) {
+        label.isHidden = false
+        label.text = error
     }
 }
