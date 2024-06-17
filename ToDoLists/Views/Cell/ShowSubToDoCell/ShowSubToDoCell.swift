@@ -15,7 +15,7 @@ class ShowSubToDoCell: UITableViewCell {
     var data: SubToDoVO? = nil {
         didSet {
             if let data = data {
-                imgCheck.image = UIImage(systemName: data.isComplete ? "checkmark.square" : "checkmark.square")
+                //imgCheck.image = UIImage(systemName: data.isComplete ? "checkmark.square" : "square")
                 lblTitle.text = data.title
             }
         }

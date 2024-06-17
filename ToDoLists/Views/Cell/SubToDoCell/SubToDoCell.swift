@@ -10,6 +10,7 @@ import UIKit
 protocol SubToDoCellDelegate: AnyObject {
     func onTapCheck(data: SubToDoCellVO)
     func onUpdateTitle(data: SubToDoCellVO, title: String)
+    func onTapDelete(indexPath: IndexPath)
 }
 
 class SubToDoCell: UITableViewCell {
@@ -17,6 +18,7 @@ class SubToDoCell: UITableViewCell {
     @IBOutlet weak var imgCheck: UIImageView!
     @IBOutlet weak var btnCheck: UIButton!
     @IBOutlet weak var tfTitle: UITextField!
+    @IBOutlet weak var btnDelete: UIButton!
     
     var data: SubToDoCellVO? = nil {
         didSet {
@@ -40,6 +42,7 @@ class SubToDoCell: UITableViewCell {
         // Initialization code
         self.selectionStyle = .none
         btnCheck.addTarget(self, action: #selector(onTapCheck), for: .touchUpInside)
+        btnDelete.addTarget(self, action: #selector(onTapDelete), for: .touchUpInside)
         tfTitle.addTarget(self, action: #selector(onChangeTitle), for: .editingChanged)
     }
 
@@ -58,5 +61,11 @@ class SubToDoCell: UITableViewCell {
     @objc func onChangeTitle() {
         guard let data = data else { return }
         self.delegate?.onUpdateTitle(data: data, title: tfTitle.text ?? "")
+    }
+    
+    @objc func onTapDelete() {
+        if let tableView = self.superview as? UITableView, let indexPath = tableView.indexPath(for: self) {
+            self.delegate?.onTapDelete(indexPath: indexPath)
+        }
     }
 }

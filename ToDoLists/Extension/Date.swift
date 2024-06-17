@@ -15,10 +15,10 @@ extension Date {
     }
     
     var isOverDue: Bool {
-        return self > Date()
+        return self < Date()
     }
     
-    func toString(format: String = "h:mm a") -> String? {
+    func toString() -> String? {
         let dateFormatter = DateFormatter()
         dateFormatter.timeZone = .current
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
@@ -27,7 +27,7 @@ extension Date {
             return "Today, \(dateFormatter.string(from: self))"
         }
         else {
-            dateFormatter.dateFormat = "MMM DD, h:mm a"
+            dateFormatter.dateFormat = "MMM d, h:mm a"
             return dateFormatter.string(from: self)
         }
     }

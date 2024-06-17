@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UserNotifications
 
 protocol AddToDoViewDelegate {
     func onLoadSubTo()
@@ -71,6 +72,14 @@ class AddToDoVM {
         subToDo.append(.init())
     }
     
+    func removeSubToDo(index: Int) {
+        subToDo.remove(at: index)
+    }
+    
+    func updateSubToDo(subToDos: [SubToDoVO]) {
+        subToDo = subToDos.map { $0.toCellVO() }
+    }
+    
     func changeSubToDoComplete(data: SubToDoCellVO) {
         data.isComplete.toggle()
     }
@@ -93,10 +102,34 @@ class AddToDoVM {
             description: self.toDoDescription ?? "",
             startDate: self.startDate!,
             endDate: self.endDate!,
-            subToDos: self.subToDo.map { $0.toVO() },
+            subToDos: self.subToDo.filter { !$0.title.isEmpty }.map { $0.toVO() },
             isComplete: false,
             isAlert: self.isAlert)
-        {
+        { todo in
+            if todo.isAlert {
+                UNUserNotificationCenter.scheduleNotification(for: todo)
+            }
+            self.delegate.onSuccessAddToDo()
+        } onFailed: { error in
+            self.delegate.onError(error: error)
+        }
+    }
+    
+    func updateToDo(for id: String) {
+        repository.updateToDo(
+            for: id,
+            title: self.title!,
+            description: self.toDoDescription!,
+            startDate: self.startDate!,
+            endDate: self.endDate!,
+            subToDos: self.subToDo.filter { !$0.title.isEmpty }.map { $0.toVO() },
+            isComplete: false,
+            isAlert: self.isAlert)
+        { todo in
+            UNUserNotificationCenter.removeNotification(for: id)
+            if self.isAlert {
+                UNUserNotificationCenter.scheduleNotification(for: todo)
+            }
             self.delegate.onSuccessAddToDo()
         } onFailed: { error in
             self.delegate.onError(error: error)

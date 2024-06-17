@@ -20,6 +20,8 @@
 		065CD1D22C17209A0039FC9E /* ToDoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CD1D12C17209A0039FC9E /* ToDoRepository.swift */; };
 		065CD1D52C17336C0039FC9E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CD1D42C17336C0039FC9E /* Date.swift */; };
 		065CD1D82C18655B0039FC9E /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CD1D72C18655B0039FC9E /* UIButton.swift */; };
+		06BC7C172C1F27EB00232151 /* DynamicHeightTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC7C162C1F27EB00232151 /* DynamicHeightTableView.swift */; };
+		06BC7C192C201BC900232151 /* UNUserNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC7C182C201BC900232151 /* UNUserNotificationCenter.swift */; };
 		06D4D8B92C1D60EF001460B2 /* SubToDoCellVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D4D8B82C1D60EF001460B2 /* SubToDoCellVO.swift */; };
 		06D4D8BB2C1D610B001460B2 /* SubToDoCellMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D4D8BA2C1D610B001460B2 /* SubToDoCellMapper.swift */; };
 		06D4D8CC2C1E7F8B001460B2 /* ShowSubToDoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06D4D8CB2C1E7F8B001460B2 /* ShowSubToDoCell.xib */; };
@@ -96,6 +98,8 @@
 		065CD1D12C17209A0039FC9E /* ToDoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoRepository.swift; sourceTree = "<group>"; };
 		065CD1D42C17336C0039FC9E /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		065CD1D72C18655B0039FC9E /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		06BC7C162C1F27EB00232151 /* DynamicHeightTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightTableView.swift; sourceTree = "<group>"; };
+		06BC7C182C201BC900232151 /* UNUserNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNUserNotificationCenter.swift; sourceTree = "<group>"; };
 		06D4D8B82C1D60EF001460B2 /* SubToDoCellVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubToDoCellVO.swift; sourceTree = "<group>"; };
 		06D4D8BA2C1D610B001460B2 /* SubToDoCellMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubToDoCellMapper.swift; sourceTree = "<group>"; };
 		06D4D8CA2C1E7F8B001460B2 /* ShowSubToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSubToDoCell.swift; sourceTree = "<group>"; };
@@ -252,8 +256,17 @@
 				065CD1D42C17336C0039FC9E /* Date.swift */,
 				065CD1D72C18655B0039FC9E /* UIButton.swift */,
 				06DD203C2C195958009BECB8 /* UITextField.swift */,
+				06BC7C182C201BC900232151 /* UNUserNotificationCenter.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		06BC7C152C1F27B300232151 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				06BC7C162C1F27EB00232151 /* DynamicHeightTableView.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 		06D4D8C92C1E7F50001460B2 /* ShowSubToDoCell */ = {
@@ -288,6 +301,7 @@
 		06D9126E2C15FD35005D2794 /* ToDoLists */ = {
 			isa = PBXGroup;
 			children = (
+				06BC7C152C1F27B300232151 /* Custom Views */,
 				065CD1D32C1730BA0039FC9E /* Extension */,
 				06D912A72C16A650005D2794 /* Utilities */,
 				06D912A32C168553005D2794 /* Data */,
@@ -613,6 +627,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06BC7C172C1F27EB00232151 /* DynamicHeightTableView.swift in Sources */,
 				065CD1D52C17336C0039FC9E /* Date.swift in Sources */,
 				06D912702C15FD35005D2794 /* AppDelegate.swift in Sources */,
 				06D912B22C16B1D8005D2794 /* ScheduleVC.swift in Sources */,
@@ -634,6 +649,7 @@
 				06D912A62C16A264005D2794 /* RootNC.swift in Sources */,
 				06D4D8BB2C1D610B001460B2 /* SubToDoCellMapper.swift in Sources */,
 				065CD1C32C16FB340039FC9E /* SubToDoEntity.swift in Sources */,
+				06BC7C192C201BC900232151 /* UNUserNotificationCenter.swift in Sources */,
 				06D912BE2C16B274005D2794 /* CompleteVM.swift in Sources */,
 				065CD1D22C17209A0039FC9E /* ToDoRepository.swift in Sources */,
 				06DD203D2C195958009BECB8 /* UITextField.swift in Sources */,

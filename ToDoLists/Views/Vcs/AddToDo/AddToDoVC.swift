@@ -28,12 +28,15 @@ class AddToDoVC: UIViewController, StoryBoarded {
     
     private lazy var vm: AddToDoVM = .init(delegate: self)
     
+    var data: ToDoVO?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setUpViews()
         setUpBindings()
+        bindData()
     }
     
     private  func setUpViews() {
@@ -44,6 +47,7 @@ class AddToDoVC: UIViewController, StoryBoarded {
         tblSubToDo.dataSource = self
         tblSubToDo.delegate = self
         tblSubToDo.separatorStyle = .none
+        tblSubToDo.estimatedRowHeight = 55
         tblSubToDo.register(UINib.init(nibName: "SubToDoCell", bundle: nil), forCellReuseIdentifier: "SubToDoCell")
         setUpTextView()
     }
@@ -64,6 +68,24 @@ class AddToDoVC: UIViewController, StoryBoarded {
         tvDescription.layer.borderWidth = 1
         tvDescription.layer.cornerRadius = 7
         tvDescription.contentInset = .init(top: 5, left: 5, bottom: 5, right: 5)
+    }
+    
+    private func bindData() {
+        if let data = data {
+            tfTitle.text = data.title
+            self.vm.setTitle(title: data.title)
+            tvDescription.text = data.toDoDescription
+            self.vm.setToDoDescrition(description: data.toDoDescription)
+            tvDescription.textColor = .label
+            tfStartDate.text = data.startDate.toString()
+            self.vm.setStartDate(startDate: data.startDate)
+            tfEndDate.text = data.endDate.toString()
+            self.vm.setEndDate(endDate: data.endDate)
+            self.vm.updateSubToDo(subToDos: data.subToDos)
+            swAlert.isOn = data.isAlert
+            self.vm.setAlert(isAlert: data.isAlert)
+            self.btnAddToDo.setTitle("Update ToDo", for: .normal)
+        }
     }
     
     @objc func onChangeTitle() {
@@ -97,7 +119,12 @@ class AddToDoVC: UIViewController, StoryBoarded {
     }
     
     @objc func onTapAddToDo() {
-        vm.addToDo()
+        if let data = data {
+            vm.updateToDo(for: data.id!)
+        }
+        else {
+            vm.addToDo()
+        }
     }
 }
 
@@ -144,9 +171,7 @@ extension AddToDoVC: UITextFieldDelegate {
 extension AddToDoVC: AddToDoViewDelegate {
     func onLoadSubTo() {
         tblSubToDo.reloadData()
-        let contentHeight = self.tblSubToDo.contentSize.height
-        let height = self.tblSubToDo.frame.height
-        self.heightTblSubToDo.constant = height < contentHeight ? contentHeight : height
+        self.heightTblSubToDo.constant = self.tblSubToDo.contentSize.height
     }
     
     func onSuccessAddToDo() {
@@ -182,5 +207,9 @@ extension AddToDoVC: SubToDoCellDelegate {
                 }
             }
         }
+    }
+    
+    func onTapDelete(indexPath: IndexPath) {
+        self.vm.removeSubToDo(index: indexPath.row)
     }
 }

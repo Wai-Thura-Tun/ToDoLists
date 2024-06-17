@@ -20,10 +20,12 @@ class ToDoLocalDataSource {
         realm = try! Realm()
     }
     
-    func addToDo(for todo: ToDoVO) throws {
+    func addToDo(for todo: ToDoVO) throws -> ToDoVO {
+        let todo = todo.toEntity()
         try realm.write {
-            realm.add(todo.toEntity(), update: .all)
+            realm.add(todo, update: .all)
         }
+        return todo.toVO()
     }
     
     func getToDos
@@ -42,5 +44,39 @@ class ToDoLocalDataSource {
                 onFailed(error.localizedDescription)
             }
         }
+    }
+    
+    func toggleIsCompleteToDo(for id: String) throws {
+        let objectId = try ObjectId(string: id)
+        if let object = realm.object(ofType: ToDoEntity.self, forPrimaryKey: objectId) {
+            try realm.write {
+                object.isComplete.toggle()
+                object.subToDos.forEach { $0.isComplete.toggle() }
+            }
+        }
+    }
+    
+    func deleteToDo(for id: String) throws {
+        let objectId = try ObjectId(string: id)
+        if let object = realm.object(ofType: ToDoEntity.self, forPrimaryKey: objectId) {
+            try realm.write {
+                realm.delete(object)
+            }
+        }
+    }
+    
+    func updateToDo(for todo: ToDoVO) throws -> ToDoVO {
+        let objectId = try ObjectId(string: todo.id!)
+        if let object = realm.object(ofType: ToDoEntity.self, forPrimaryKey: objectId) {
+            try realm.write {
+                object.title = todo.title
+                object.toDoDescription = todo.toDoDescription
+                object.startDate = todo.startDate
+                object.endDate = todo.endDate
+                object.subToDos = todo.toEntity().subToDos
+                object.isAlert = todo.isAlert
+            }
+        }
+        return todo;
     }
 }

@@ -14,6 +14,13 @@ extension SubToDoVO {
             isComplete: self.isComplete
         )
     }
+    
+    func toCellVO() -> SubToDoCellVO {
+        return SubToDoCellVO.init(
+            title: self.title,
+            isComplete: self.isComplete
+        )
+    }
 }
 
 extension SubToDoEntity {

@@ -75,28 +75,91 @@ class ToDoRepository {
         }
     }
     
-    func createToDo(title: String,
-                    description: String,
-                    startDate: Date,
-                    endDate: Date,
-                    subToDos: [SubToDoVO],
-                    isComplete: Bool,
-                    isAlert: Bool,
-                    onSuccess: @escaping () -> (),
-                    onFailed: @escaping (String) -> ()
+    func createToDo(
+        title: String,
+        description: String,
+        startDate: Date,
+        endDate: Date,
+        subToDos: [SubToDoVO],
+        isComplete: Bool,
+        isAlert: Bool,
+        onSuccess: @escaping (ToDoVO) -> (),
+        onFailed: @escaping (String) -> ()
     )
     {
         do {
-            try localDataSource.addToDo(
+            let todo = try localDataSource.addToDo(
                 for: .init(title: title,
                            toDoDescription: description,
                            startDate: startDate,
                            endDate: endDate,
                            subToDos: subToDos,
                            isAlert: isAlert,
-                           isComplete: isComplete)
+                           isComplete: isComplete
+                          )
             )
+            onSuccess(todo)
+        }
+        catch {
+            onFailed(error.localizedDescription)
+        }
+    }
+    
+    func toggleIsCompleteToDo(
+        for id: String,
+        onSuccess: @escaping () -> (),
+        onFailed: @escaping (String) -> ())
+    {
+        do {
+            try localDataSource.toggleIsCompleteToDo(for: id)
             onSuccess()
+        }
+        catch {
+            onFailed(error.localizedDescription)
+        }
+    }
+    
+    func deleteToDo(
+        for id: String,
+        onSuccess: @escaping () -> (),
+        onFailed: @escaping (String) -> ()
+    )
+    {
+        do {
+            try localDataSource.deleteToDo(for: id)
+            onSuccess()
+        }
+        catch {
+            onFailed(error.localizedDescription)
+        }
+    }
+    
+    func updateToDo(
+        for id: String,
+        title: String,
+        description: String,
+        startDate: Date,
+        endDate: Date,
+        subToDos: [SubToDoVO],
+        isComplete: Bool,
+        isAlert: Bool,
+        onSuccess: @escaping (ToDoVO) -> (),
+        onFailed: @escaping (String) -> ()
+    )
+    {
+        do {
+            let todo = try localDataSource.updateToDo(
+                for: .init(id: id,
+                           title: title,
+                           toDoDescription: description,
+                           startDate: startDate,
+                           endDate: endDate,
+                           subToDos: subToDos,
+                           isAlert: isAlert,
+                           isComplete: isComplete
+                          )
+            )
+            onSuccess(todo)
         }
         catch {
             onFailed(error.localizedDescription)
