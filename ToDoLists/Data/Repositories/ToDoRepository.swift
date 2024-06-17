@@ -18,7 +18,7 @@ class ToDoRepository {
     {
         localDataSource.getToDos { data in
             let todayToDos = data.filter {
-                $0.startDate.isToday && !$0.isComplete
+                $0.startDate.isToday && !$0.isComplete && !$0.endDate.isOverDue
             }
             onSuccess(todayToDos)
         } onFailed: { error in
@@ -35,7 +35,7 @@ class ToDoRepository {
     {
         localDataSource.getToDos { data in
             let scheduledToDos = data.filter {
-                !$0.startDate.isToday && !$0.isComplete
+                !$0.startDate.isToday && !$0.isComplete && !$0.endDate.isOverDue
             }
             onSuccess(scheduledToDos)
         } onFailed: { error in
@@ -67,7 +67,7 @@ class ToDoRepository {
     {
         localDataSource.getToDos { data in
             let overDueToDos = data.filter {
-                $0.endDate.isOverDue
+                $0.endDate.isOverDue && !$0.isComplete
             }
             onSuccess(overDueToDos)
         } onFailed: { error in
