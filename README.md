@@ -18,8 +18,15 @@ notify whenever each ToDo is due.
 - **Search and Filter**: Quickly find tasks using search bar.
 
 ## Screenshots
-![applogo](https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/7a2b37ca-cd99-4b76-ab00-dc876117939b)
+![Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 55 10](https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/4725d434-432a-47b8-a364-03dace5ba814)
 
+![Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 55 50](https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/7765cbae-b820-4cf4-89ab-13aa8c5f9428)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 56 44](https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/211820fd-3e9e-42e2-87cb-c3db14625520)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 56 48](https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/90489b47-6790-45fe-8e63-63192a554440)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 58 01](https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/e6ba8cfc-241d-4380-9600-b5c4f8d3a028)
 
 ## Installation
 1. Clone the repository to your local machine.
