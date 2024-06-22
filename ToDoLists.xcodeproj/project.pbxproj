@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		065CD1B32C16D44F0039FC9E /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 065CD1B22C16D44F0039FC9E /* IQKeyboardManagerSwift */; };
+		065CD1BC2C16DF0A0039FC9E /* ToDoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CD1BB2C16DF0A0039FC9E /* ToDoEntity.swift */; };
+		065CD1BF2C16DF590039FC9E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 065CD1BE2C16DF590039FC9E /* RealmSwift */; };
+		065CD1C02C16E6680039FC9E /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 065CD1BE2C16DF590039FC9E /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		065CD1C32C16FB340039FC9E /* SubToDoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CD1C22C16FB340039FC9E /* SubToDoEntity.swift */; };
+		065CD1C52C16FCD60039FC9E /* ToDoLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CD1C42C16FCD60039FC9E /* ToDoLocalDataSource.swift */; };
+		065CD1C72C16FFD30039FC9E /* ToDoVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CD1C62C16FFD30039FC9E /* ToDoVO.swift */; };
+		065CD1C92C16FFDD0039FC9E /* SubToDoVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CD1C82C16FFDD0039FC9E /* SubToDoVO.swift */; };
+		065CD1CD2C170B5F0039FC9E /* ToDoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CD1CC2C170B5F0039FC9E /* ToDoMapper.swift */; };
+		065CD1CF2C1716C50039FC9E /* SubToDoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CD1CE2C1716C50039FC9E /* SubToDoMapper.swift */; };
+		065CD1D22C17209A0039FC9E /* ToDoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CD1D12C17209A0039FC9E /* ToDoRepository.swift */; };
+		065CD1D52C17336C0039FC9E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CD1D42C17336C0039FC9E /* Date.swift */; };
+		065CD1D82C18655B0039FC9E /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CD1D72C18655B0039FC9E /* UIButton.swift */; };
+		06BC7C172C1F27EB00232151 /* DynamicHeightTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC7C162C1F27EB00232151 /* DynamicHeightTableView.swift */; };
+		06BC7C192C201BC900232151 /* UNUserNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC7C182C201BC900232151 /* UNUserNotificationCenter.swift */; };
+		06D4D8B92C1D60EF001460B2 /* SubToDoCellVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D4D8B82C1D60EF001460B2 /* SubToDoCellVO.swift */; };
+		06D4D8BB2C1D610B001460B2 /* SubToDoCellMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D4D8BA2C1D610B001460B2 /* SubToDoCellMapper.swift */; };
+		06D4D8CC2C1E7F8B001460B2 /* ShowSubToDoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06D4D8CB2C1E7F8B001460B2 /* ShowSubToDoCell.xib */; };
+		06D4D8CD2C1E7F8B001460B2 /* ShowSubToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D4D8CA2C1E7F8B001460B2 /* ShowSubToDoCell.swift */; };
 		06D912702C15FD35005D2794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D9126F2C15FD35005D2794 /* AppDelegate.swift */; };
 		06D912722C15FD35005D2794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D912712C15FD35005D2794 /* SceneDelegate.swift */; };
 		06D912772C15FD35005D2794 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 06D912762C15FD35005D2794 /* Base */; };
@@ -18,6 +37,23 @@
 		06D912A12C168515005D2794 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06D912A02C168515005D2794 /* Home.storyboard */; };
 		06D912A62C16A264005D2794 /* RootNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D912A52C16A264005D2794 /* RootNC.swift */; };
 		06D912A92C16A662005D2794 /* StoryBoarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D912A82C16A662005D2794 /* StoryBoarded.swift */; };
+		06D912AC2C16B1AB005D2794 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D912AB2C16B1AB005D2794 /* HomeVC.swift */; };
+		06D912AF2C16B1C6005D2794 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D912AE2C16B1C6005D2794 /* HomeVM.swift */; };
+		06D912B22C16B1D8005D2794 /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D912B12C16B1D8005D2794 /* ScheduleVC.swift */; };
+		06D912B42C16B1EB005D2794 /* ScheduleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D912B32C16B1EB005D2794 /* ScheduleVM.swift */; };
+		06D912B72C16B1FF005D2794 /* OverdueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D912B62C16B1FF005D2794 /* OverdueVC.swift */; };
+		06D912B92C16B20A005D2794 /* OverdueVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D912B82C16B20A005D2794 /* OverdueVM.swift */; };
+		06D912BC2C16B26D005D2794 /* CompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D912BB2C16B26D005D2794 /* CompleteVC.swift */; };
+		06D912BE2C16B274005D2794 /* CompleteVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D912BD2C16B274005D2794 /* CompleteVM.swift */; };
+		06D912C12C16B291005D2794 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D912C02C16B291005D2794 /* TabBarVC.swift */; };
+		06D912C42C16B378005D2794 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D912C32C16B378005D2794 /* SplashVC.swift */; };
+		06DD20342C188C0F009BECB8 /* ToDoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06DD20332C188C0F009BECB8 /* ToDoCell.xib */; };
+		06DD20352C188C0F009BECB8 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DD20322C188C0F009BECB8 /* ToDoCell.swift */; };
+		06DD20392C188D0C009BECB8 /* AddToDoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DD20382C188D0C009BECB8 /* AddToDoVC.swift */; };
+		06DD203B2C188D15009BECB8 /* AddToDoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DD203A2C188D15009BECB8 /* AddToDoVM.swift */; };
+		06DD203D2C195958009BECB8 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DD203C2C195958009BECB8 /* UITextField.swift */; };
+		06DD20412C199133009BECB8 /* SubToDoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06DD20402C199133009BECB8 /* SubToDoCell.xib */; };
+		06DD20422C199133009BECB8 /* SubToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DD203F2C199133009BECB8 /* SubToDoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +73,37 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		065CD1C12C16E6680039FC9E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				065CD1C02C16E6680039FC9E /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		065CD1BB2C16DF0A0039FC9E /* ToDoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoEntity.swift; sourceTree = "<group>"; };
+		065CD1C22C16FB340039FC9E /* SubToDoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubToDoEntity.swift; sourceTree = "<group>"; };
+		065CD1C42C16FCD60039FC9E /* ToDoLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoLocalDataSource.swift; sourceTree = "<group>"; };
+		065CD1C62C16FFD30039FC9E /* ToDoVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoVO.swift; sourceTree = "<group>"; };
+		065CD1C82C16FFDD0039FC9E /* SubToDoVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubToDoVO.swift; sourceTree = "<group>"; };
+		065CD1CC2C170B5F0039FC9E /* ToDoMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoMapper.swift; sourceTree = "<group>"; };
+		065CD1CE2C1716C50039FC9E /* SubToDoMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubToDoMapper.swift; sourceTree = "<group>"; };
+		065CD1D12C17209A0039FC9E /* ToDoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoRepository.swift; sourceTree = "<group>"; };
+		065CD1D42C17336C0039FC9E /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		065CD1D72C18655B0039FC9E /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		06BC7C162C1F27EB00232151 /* DynamicHeightTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightTableView.swift; sourceTree = "<group>"; };
+		06BC7C182C201BC900232151 /* UNUserNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNUserNotificationCenter.swift; sourceTree = "<group>"; };
+		06D4D8B82C1D60EF001460B2 /* SubToDoCellVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubToDoCellVO.swift; sourceTree = "<group>"; };
+		06D4D8BA2C1D610B001460B2 /* SubToDoCellMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubToDoCellMapper.swift; sourceTree = "<group>"; };
+		06D4D8CA2C1E7F8B001460B2 /* ShowSubToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSubToDoCell.swift; sourceTree = "<group>"; };
+		06D4D8CB2C1E7F8B001460B2 /* ShowSubToDoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowSubToDoCell.xib; sourceTree = "<group>"; };
 		06D9126C2C15FD35005D2794 /* ToDoLists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoLists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D9126F2C15FD35005D2794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06D912712C15FD35005D2794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +119,23 @@
 		06D912A02C168515005D2794 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		06D912A52C16A264005D2794 /* RootNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNC.swift; sourceTree = "<group>"; };
 		06D912A82C16A662005D2794 /* StoryBoarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoarded.swift; sourceTree = "<group>"; };
+		06D912AB2C16B1AB005D2794 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		06D912AE2C16B1C6005D2794 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		06D912B12C16B1D8005D2794 /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
+		06D912B32C16B1EB005D2794 /* ScheduleVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVM.swift; sourceTree = "<group>"; };
+		06D912B62C16B1FF005D2794 /* OverdueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverdueVC.swift; sourceTree = "<group>"; };
+		06D912B82C16B20A005D2794 /* OverdueVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverdueVM.swift; sourceTree = "<group>"; };
+		06D912BB2C16B26D005D2794 /* CompleteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteVC.swift; sourceTree = "<group>"; };
+		06D912BD2C16B274005D2794 /* CompleteVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteVM.swift; sourceTree = "<group>"; };
+		06D912C02C16B291005D2794 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		06D912C32C16B378005D2794 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		06DD20322C188C0F009BECB8 /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
+		06DD20332C188C0F009BECB8 /* ToDoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoCell.xib; sourceTree = "<group>"; };
+		06DD20382C188D0C009BECB8 /* AddToDoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoVC.swift; sourceTree = "<group>"; };
+		06DD203A2C188D15009BECB8 /* AddToDoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoVM.swift; sourceTree = "<group>"; };
+		06DD203C2C195958009BECB8 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		06DD203F2C199133009BECB8 /* SubToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubToDoCell.swift; sourceTree = "<group>"; };
+		06DD20402C199133009BECB8 /* SubToDoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubToDoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +143,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				065CD1BF2C16DF590039FC9E /* RealmSwift in Frameworks */,
+				065CD1B32C16D44F0039FC9E /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +165,119 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		065CD1B42C16DE6B0039FC9E /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				065CD1B62C16DE7C0039FC9E /* Local */,
+				065CD1B52C16DE790039FC9E /* Remote */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		065CD1B52C16DE790039FC9E /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		065CD1B62C16DE7C0039FC9E /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				065CD1C42C16FCD60039FC9E /* ToDoLocalDataSource.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		065CD1B72C16DE940039FC9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				065CD1CA2C17003C0039FC9E /* VOs */,
+				065CD1B92C16DEA10039FC9E /* Request */,
+				065CD1B82C16DE9B0039FC9E /* Response */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		065CD1B82C16DE9B0039FC9E /* Response */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		065CD1B92C16DEA10039FC9E /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		065CD1BA2C16DEEB0039FC9E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				065CD1BB2C16DF0A0039FC9E /* ToDoEntity.swift */,
+				065CD1C22C16FB340039FC9E /* SubToDoEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		065CD1CA2C17003C0039FC9E /* VOs */ = {
+			isa = PBXGroup;
+			children = (
+				065CD1C62C16FFD30039FC9E /* ToDoVO.swift */,
+				065CD1C82C16FFDD0039FC9E /* SubToDoVO.swift */,
+				06D4D8B82C1D60EF001460B2 /* SubToDoCellVO.swift */,
+			);
+			path = VOs;
+			sourceTree = "<group>";
+		};
+		065CD1CB2C170B570039FC9E /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				065CD1CC2C170B5F0039FC9E /* ToDoMapper.swift */,
+				065CD1CE2C1716C50039FC9E /* SubToDoMapper.swift */,
+				06D4D8BA2C1D610B001460B2 /* SubToDoCellMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		065CD1D02C1720870039FC9E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				065CD1D12C17209A0039FC9E /* ToDoRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		065CD1D32C1730BA0039FC9E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				065CD1D42C17336C0039FC9E /* Date.swift */,
+				065CD1D72C18655B0039FC9E /* UIButton.swift */,
+				06DD203C2C195958009BECB8 /* UITextField.swift */,
+				06BC7C182C201BC900232151 /* UNUserNotificationCenter.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		06BC7C152C1F27B300232151 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				06BC7C162C1F27EB00232151 /* DynamicHeightTableView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		06D4D8C92C1E7F50001460B2 /* ShowSubToDoCell */ = {
+			isa = PBXGroup;
+			children = (
+				06D4D8CA2C1E7F8B001460B2 /* ShowSubToDoCell.swift */,
+				06D4D8CB2C1E7F8B001460B2 /* ShowSubToDoCell.xib */,
+			);
+			path = ShowSubToDoCell;
+			sourceTree = "<group>";
+		};
 		06D912632C15FD35005D2794 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +301,8 @@
 		06D9126E2C15FD35005D2794 /* ToDoLists */ = {
 			isa = PBXGroup;
 			children = (
+				06BC7C152C1F27B300232151 /* Custom Views */,
+				065CD1D32C1730BA0039FC9E /* Extension */,
 				06D912A72C16A650005D2794 /* Utilities */,
 				06D912A32C168553005D2794 /* Data */,
 				06D912A22C16854E005D2794 /* Views */,
@@ -146,6 +346,8 @@
 			isa = PBXGroup;
 			children = (
 				06D912A42C16A255005D2794 /* Navigations */,
+				06DD20312C188BE5009BECB8 /* Cell */,
+				06D912AA2C16B16E005D2794 /* Vcs */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +355,11 @@
 		06D912A32C168553005D2794 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				065CD1D02C1720870039FC9E /* Repositories */,
+				065CD1CB2C170B570039FC9E /* Mapper */,
+				065CD1BA2C16DEEB0039FC9E /* Entities */,
+				065CD1B72C16DE940039FC9E /* Models */,
+				065CD1B42C16DE6B0039FC9E /* DataSources */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -173,6 +380,109 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		06D912AA2C16B16E005D2794 /* Vcs */ = {
+			isa = PBXGroup;
+			children = (
+				06DD20372C188CFA009BECB8 /* AddToDo */,
+				06D912C22C16B35C005D2794 /* Splash */,
+				06D912BF2C16B27A005D2794 /* TabBar */,
+				06D912BA2C16B264005D2794 /* Complete */,
+				06D912B52C16B1EE005D2794 /* Overdue */,
+				06D912B02C16B1C9005D2794 /* Schedule */,
+				06D912AD2C16B1B5005D2794 /* Home */,
+			);
+			path = Vcs;
+			sourceTree = "<group>";
+		};
+		06D912AD2C16B1B5005D2794 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				06D912AB2C16B1AB005D2794 /* HomeVC.swift */,
+				06D912AE2C16B1C6005D2794 /* HomeVM.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		06D912B02C16B1C9005D2794 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				06D912B12C16B1D8005D2794 /* ScheduleVC.swift */,
+				06D912B32C16B1EB005D2794 /* ScheduleVM.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		06D912B52C16B1EE005D2794 /* Overdue */ = {
+			isa = PBXGroup;
+			children = (
+				06D912B62C16B1FF005D2794 /* OverdueVC.swift */,
+				06D912B82C16B20A005D2794 /* OverdueVM.swift */,
+			);
+			path = Overdue;
+			sourceTree = "<group>";
+		};
+		06D912BA2C16B264005D2794 /* Complete */ = {
+			isa = PBXGroup;
+			children = (
+				06D912BB2C16B26D005D2794 /* CompleteVC.swift */,
+				06D912BD2C16B274005D2794 /* CompleteVM.swift */,
+			);
+			path = Complete;
+			sourceTree = "<group>";
+		};
+		06D912BF2C16B27A005D2794 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				06D912C02C16B291005D2794 /* TabBarVC.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		06D912C22C16B35C005D2794 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				06D912C32C16B378005D2794 /* SplashVC.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		06DD20312C188BE5009BECB8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				06D4D8C92C1E7F50001460B2 /* ShowSubToDoCell */,
+				06DD203E2C1990F7009BECB8 /* SubToDoCell */,
+				06DD20362C188C11009BECB8 /* ToDoCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		06DD20362C188C11009BECB8 /* ToDoCell */ = {
+			isa = PBXGroup;
+			children = (
+				06DD20322C188C0F009BECB8 /* ToDoCell.swift */,
+				06DD20332C188C0F009BECB8 /* ToDoCell.xib */,
+			);
+			path = ToDoCell;
+			sourceTree = "<group>";
+		};
+		06DD20372C188CFA009BECB8 /* AddToDo */ = {
+			isa = PBXGroup;
+			children = (
+				06DD20382C188D0C009BECB8 /* AddToDoVC.swift */,
+				06DD203A2C188D15009BECB8 /* AddToDoVM.swift */,
+			);
+			path = AddToDo;
+			sourceTree = "<group>";
+		};
+		06DD203E2C1990F7009BECB8 /* SubToDoCell */ = {
+			isa = PBXGroup;
+			children = (
+				06DD203F2C199133009BECB8 /* SubToDoCell.swift */,
+				06DD20402C199133009BECB8 /* SubToDoCell.xib */,
+			);
+			path = SubToDoCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,12 +493,17 @@
 				06D912682C15FD35005D2794 /* Sources */,
 				06D912692C15FD35005D2794 /* Frameworks */,
 				06D9126A2C15FD35005D2794 /* Resources */,
+				065CD1C12C16E6680039FC9E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ToDoLists;
+			packageProductDependencies = (
+				065CD1B22C16D44F0039FC9E /* IQKeyboardManagerSwift */,
+				065CD1BE2C16DF590039FC9E /* RealmSwift */,
+			);
 			productName = ToDoLists;
 			productReference = 06D9126C2C15FD35005D2794 /* ToDoLists.app */;
 			productType = "com.apple.product-type.application";
@@ -261,6 +576,10 @@
 				Base,
 			);
 			mainGroup = 06D912632C15FD35005D2794;
+			packageReferences = (
+				065CD1B12C16D44F0039FC9E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				065CD1BD2C16DF590039FC9E /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 06D9126D2C15FD35005D2794 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -277,7 +596,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06D4D8CC2C1E7F8B001460B2 /* ShowSubToDoCell.xib in Resources */,
+				06DD20412C199133009BECB8 /* SubToDoCell.xib in Resources */,
 				06D912792C15FD3B005D2794 /* Assets.xcassets in Resources */,
+				06DD20342C188C0F009BECB8 /* ToDoCell.xib in Resources */,
 				06D9127C2C15FD3B005D2794 /* Base in Resources */,
 				06D912772C15FD35005D2794 /* Base in Resources */,
 				06D912A12C168515005D2794 /* Home.storyboard in Resources */,
@@ -305,10 +627,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06BC7C172C1F27EB00232151 /* DynamicHeightTableView.swift in Sources */,
+				065CD1D52C17336C0039FC9E /* Date.swift in Sources */,
 				06D912702C15FD35005D2794 /* AppDelegate.swift in Sources */,
+				06D912B22C16B1D8005D2794 /* ScheduleVC.swift in Sources */,
+				06D4D8B92C1D60EF001460B2 /* SubToDoCellVO.swift in Sources */,
+				06D912AC2C16B1AB005D2794 /* HomeVC.swift in Sources */,
+				06D912B42C16B1EB005D2794 /* ScheduleVM.swift in Sources */,
+				06D912B72C16B1FF005D2794 /* OverdueVC.swift in Sources */,
+				06DD20392C188D0C009BECB8 /* AddToDoVC.swift in Sources */,
 				06D912722C15FD35005D2794 /* SceneDelegate.swift in Sources */,
+				065CD1C52C16FCD60039FC9E /* ToDoLocalDataSource.swift in Sources */,
+				06D912AF2C16B1C6005D2794 /* HomeVM.swift in Sources */,
+				065CD1BC2C16DF0A0039FC9E /* ToDoEntity.swift in Sources */,
+				06D912B92C16B20A005D2794 /* OverdueVM.swift in Sources */,
+				065CD1D82C18655B0039FC9E /* UIButton.swift in Sources */,
+				065CD1CD2C170B5F0039FC9E /* ToDoMapper.swift in Sources */,
+				06D912C12C16B291005D2794 /* TabBarVC.swift in Sources */,
+				06DD20352C188C0F009BECB8 /* ToDoCell.swift in Sources */,
+				06DD203B2C188D15009BECB8 /* AddToDoVM.swift in Sources */,
 				06D912A62C16A264005D2794 /* RootNC.swift in Sources */,
+				06D4D8BB2C1D610B001460B2 /* SubToDoCellMapper.swift in Sources */,
+				065CD1C32C16FB340039FC9E /* SubToDoEntity.swift in Sources */,
+				06BC7C192C201BC900232151 /* UNUserNotificationCenter.swift in Sources */,
+				06D912BE2C16B274005D2794 /* CompleteVM.swift in Sources */,
+				065CD1D22C17209A0039FC9E /* ToDoRepository.swift in Sources */,
+				06DD203D2C195958009BECB8 /* UITextField.swift in Sources */,
+				065CD1C92C16FFDD0039FC9E /* SubToDoVO.swift in Sources */,
+				065CD1C72C16FFD30039FC9E /* ToDoVO.swift in Sources */,
+				06D4D8CD2C1E7F8B001460B2 /* ShowSubToDoCell.swift in Sources */,
 				06D912A92C16A662005D2794 /* StoryBoarded.swift in Sources */,
+				06D912BC2C16B26D005D2794 /* CompleteVC.swift in Sources */,
+				065CD1CF2C1716C50039FC9E /* SubToDoMapper.swift in Sources */,
+				06DD20422C199133009BECB8 /* SubToDoCell.swift in Sources */,
+				06D912C42C16B378005D2794 /* SplashVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,8 +842,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TBSLHJAF4T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDoLists/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ToDo Master";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -521,8 +875,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TBSLHJAF4T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDoLists/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ToDo Master";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -657,6 +1013,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		065CD1B12C16D44F0039FC9E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.0;
+			};
+		};
+		065CD1BD2C16DF590039FC9E /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.51.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		065CD1B22C16D44F0039FC9E /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 065CD1B12C16D44F0039FC9E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		065CD1BE2C16DF590039FC9E /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 065CD1BD2C16DF590039FC9E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 06D912642C15FD35005D2794 /* Project object */;
 }
