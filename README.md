@@ -6,20 +6,16 @@
 3. [Screenshots](#screenshots)
 4. [Installation](#installation)
 5. [Usage](#usage)
-6. [Contributing](#contributing)
-7. [Support](#support)
-8. [License](#license)
 
 ## Introduction
-Welcome to ToDo Master, your ultimate task management application! This app helps you stay organized by allowing you to create, manage, and prioritize your tasks efficiently.
+This project is a ToDo Master application for practicing my ios development skill developed using Swift, adhering to the MVVM (Model-View-ViewModel) design pattern. It incorporates third-party library called Realm to store and manipulate ToDo Lists dataand uses Swift Package Manager for dependency management, local notifications to 
+notify whenever each ToDo is due.
 
 ## Features
 - **Create Tasks**: Easily add new tasks with titles, descriptions, due dates, and sub-tasks.
-- **Manage Tasks**: Edit, delete, mark as complete, and prioritize tasks based on urgency or importance.
+- **Manage Tasks**: Edit, delete, mark as complete.
 - **Sub-tasks**: Break down larger tasks into smaller, manageable sub-tasks for better organization.
-- **Priority Levels**: Assign priority levels to tasks to focus on what matters most.
-- **Search and Filter**: Quickly find tasks using search and filter options.
-- **Customizable Settings**: Tailor the app to your preferences with customizable settings.
+- **Search and Filter**: Quickly find tasks using search bar.
 
 ## Screenshots
 [Insert screenshots of the app here]
@@ -35,12 +31,3 @@ Welcome to ToDo Master, your ultimate task management application! This app help
 3. Fill in the task details such as title, description, due date, and sub-tasks.
 4. Save the task and manage it from the main task list.
 5. Mark tasks as complete, edit or delete them as needed.
-
-## Contributing
-Contributions are welcome! If you have any ideas for new features, bug fixes, or improvements, please open an issue or submit a pull request.
-
-## Support
-For any questions or issues, please contact [your contact information].
-
-## License
-This project is licensed under the [License Name] License - see the [LICENSE](LICENSE) file for details.
