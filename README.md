@@ -19,15 +19,40 @@ notify whenever each ToDo is due.
 
 ## Screenshots
 
-<img src="https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/4725d434-432a-47b8-a364-03dace5ba814" alt="Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 55 10" width="375" height="812">
+<style>
+  .screenshot {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+  }
+  .screenshot-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .screenshot-item {
+    margin: 10px;
+  }
+</style>
 
-<img src="https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/7765cbae-b820-4cf4-89ab-13aa8c5f9428" alt="Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 55 50" width="375" height="812">
-
-<img src="https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/211820fd-3e9e-42e2-87cb-c3db14625520" alt="Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 56 44" width="375" height="812">
-
-<img src="https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/90489b47-6790-45fe-8e63-63192a554440" alt="Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 56 48" width="375" height="812">
-
-<img src="https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/e6ba8cfc-241d-4380-9600-b5c4f8d3a028" alt="Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 58 01" width="375" height="812">
+<div class="screenshot-container">
+  <div class="screenshot-item">
+    <img src="https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/4725d434-432a-47b8-a364-03dace5ba814" alt="Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 55 10" width="375" height="812" class="screenshot">
+  </div>
+  <div class="screenshot-item">
+    <img src="https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/7765cbae-b820-4cf4-89ab-13aa8c5f9428" alt="Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 55 50" width="375" height="812" class="screenshot">
+  </div>
+  <div class="screenshot-item">
+    <img src="https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/211820fd-3e9e-42e2-87cb-c3db14625520" alt="Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 56 44" width="375" height="812" class="screenshot">
+  </div>
+  <div class="screenshot-item">
+    <img src="https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/90489b47-6790-45fe-8e63-63192a554440" alt="Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 56 48" width="375" height="812" class="screenshot">
+  </div>
+  <div class="screenshot-item">
+    <img src="https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/e6ba8cfc-241d-4380-9600-b5c4f8d3a028" alt="Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 58 01" width="375" height="812" class="screenshot">
+  </div>
+</div>
 
 ## Installation
 1. Clone the repository to your local machine.
