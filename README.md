@@ -18,7 +18,8 @@ notify whenever each ToDo is due.
 - **Search and Filter**: Quickly find tasks using search bar.
 
 ## Screenshots
-![Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 55 10](https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/4725d434-432a-47b8-a364-03dace5ba814)
+
+<img src="https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/4725d434-432a-47b8-a364-03dace5ba814" alt="Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 55 10" width="100" height="100">
 
 ![Simulator Screenshot - iPhone 15 Pro - 2024-06-22 at 14 55 50](https://github.com/Wai-Thura-Tun/ToDoLists/assets/103933946/7765cbae-b820-4cf4-89ab-13aa8c5f9428)
 
