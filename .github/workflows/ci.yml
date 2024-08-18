@@ -25,7 +25,7 @@ jobs:
         xcode-version: latest-stable  # Specify the version of Xcode to use
 
     - name: Resolve Swift Packages  # Step 3: Resolve Swift Package Manager dependencies
-      run: swift package resolve  # This command resolves all Swift packages, including IQKeyboardManager and Realm
+      run: swift -resolvePackageDependencies -project ToDoLists.xcodeproj  # This command resolves all Swift packages, including IQKeyboardManager and Realm
 
     - name: Build and Test  # Step 4: Build and test the project using xcodebuild
       run: |
