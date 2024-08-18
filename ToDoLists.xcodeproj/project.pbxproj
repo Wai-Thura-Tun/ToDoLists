@@ -22,6 +22,7 @@
 		065CD1D82C18655B0039FC9E /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CD1D72C18655B0039FC9E /* UIButton.swift */; };
 		06BC7C172C1F27EB00232151 /* DynamicHeightTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC7C162C1F27EB00232151 /* DynamicHeightTableView.swift */; };
 		06BC7C192C201BC900232151 /* UNUserNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC7C182C201BC900232151 /* UNUserNotificationCenter.swift */; };
+		06CD43B42C721F55007DABCF /* HomeVMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD43B32C721F55007DABCF /* HomeVMTest.swift */; };
 		06D4D8B92C1D60EF001460B2 /* SubToDoCellVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D4D8B82C1D60EF001460B2 /* SubToDoCellVO.swift */; };
 		06D4D8BB2C1D610B001460B2 /* SubToDoCellMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D4D8BA2C1D610B001460B2 /* SubToDoCellMapper.swift */; };
 		06D4D8CC2C1E7F8B001460B2 /* ShowSubToDoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06D4D8CB2C1E7F8B001460B2 /* ShowSubToDoCell.xib */; };
@@ -100,6 +101,7 @@
 		065CD1D72C18655B0039FC9E /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		06BC7C162C1F27EB00232151 /* DynamicHeightTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightTableView.swift; sourceTree = "<group>"; };
 		06BC7C182C201BC900232151 /* UNUserNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNUserNotificationCenter.swift; sourceTree = "<group>"; };
+		06CD43B32C721F55007DABCF /* HomeVMTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVMTest.swift; sourceTree = "<group>"; };
 		06D4D8B82C1D60EF001460B2 /* SubToDoCellVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubToDoCellVO.swift; sourceTree = "<group>"; };
 		06D4D8BA2C1D610B001460B2 /* SubToDoCellMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubToDoCellMapper.swift; sourceTree = "<group>"; };
 		06D4D8CA2C1E7F8B001460B2 /* ShowSubToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSubToDoCell.swift; sourceTree = "<group>"; };
@@ -269,6 +271,14 @@
 			path = "Custom Views";
 			sourceTree = "<group>";
 		};
+		06CD43B22C721F3F007DABCF /* HomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				06CD43B32C721F55007DABCF /* HomeVMTest.swift */,
+			);
+			path = HomeTests;
+			sourceTree = "<group>";
+		};
 		06D4D8C92C1E7F50001460B2 /* ShowSubToDoCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +328,7 @@
 		06D912852C15FD3C005D2794 /* ToDoListsTests */ = {
 			isa = PBXGroup;
 			children = (
+				06CD43B22C721F3F007DABCF /* HomeTests */,
 				06D912862C15FD3C005D2794 /* ToDoListsTests.swift */,
 			);
 			path = ToDoListsTests;
@@ -669,6 +680,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06D912872C15FD3C005D2794 /* ToDoListsTests.swift in Sources */,
+				06CD43B42C721F55007DABCF /* HomeVMTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
