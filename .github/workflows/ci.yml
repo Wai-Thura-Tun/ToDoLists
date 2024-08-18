@@ -1,1 +1,35 @@
+# Name of the workflow
+name: iOS Build and Test
 
+# The events that trigger this workflow
+on:
+  push:
+    branches:
+      - develop  # Run the workflow when code is pushed to the main branch
+  pull_request:
+    branches:
+      - develop  # Run the workflow when a pull request is created on the main branch
+
+# The jobs that run in the workflow
+jobs:
+  build-and-test:  # Name of the job
+    runs-on: macos-latest  # Use the latest macOS environment provided by GitHub
+
+    steps:
+    - name: Checkout code  # Step 1: Checkout your code from the repository
+      uses: actions/checkout@v3  # Use the official GitHub checkout action
+
+    - name: Set up Xcode  # Step 2: Set up the Xcode environment
+      uses: maxim-lobanov/setup-xcode@v2  # Set up the Xcode environment
+      with:
+        xcode-version: '15.0'  # Specify the version of Xcode to use
+
+    - name: Resolve Swift Packages  # Step 3: Resolve Swift Package Manager dependencies
+      run: swift package resolve  # This command resolves all Swift packages, including IQKeyboardManager and Realm
+
+    - name: Build and Test  # Step 4: Build and test the project using xcodebuild
+      run: |
+        xcodebuild clean build test \
+          -scheme YourSchemeName \
+          -destination 'platform=iOS Simulator,name=iPhone 14,OS=latest' \
+          | xcpretty
